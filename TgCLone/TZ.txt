@@ -1,0 +1,90 @@
+user:
+    id :int = None
+    email: str : None
+    phone_number : str
+    first_name : str
+    last_name : str
+    username : str
+    photo : str
+    is_premium : bool = False
+    bio : str
+
+channels:
+    id
+    name
+    username
+    is_private
+    description
+
+groups:
+    id
+    name
+    username
+    is_private
+    description
+
+ChannelUsers:
+    id
+    user_id
+    channel_id
+
+
+GroupUsers:
+    id
+    user_id
+    group_id
+
+
+chats:
+    id
+    sender_id
+    message
+    type: [group , channel , lichka]
+    chat_id
+
+
+
+
+========================= main =====================================
+    1) Register
+    2) Login
+    3) Exit
+                        -------------- Register ---------------
+                        id
+                        >>> phone_number
+                        >>> first_name
+                        >>> last_name
+                        >>> username
+                        >>> photo
+                        is_premium = False
+                        >>> bio
+
+                        check - [phone_number(unique) ,username(unique) ]
+                        save()
+                        <-main
+
+                        -------------- Login ---------------
+                        >>> phone_number
+                        >>> code
+
+                        check -> code valid
+                            account()
+                        <-main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
